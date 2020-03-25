@@ -1,0 +1,385 @@
+/* DOCUMENT */
+body {
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+
+/* HEADER */
+header {
+    position: relative;
+    text-align: center;
+}
+.yellow_box {
+    background-color: #ffeea8;
+    width: 100%;
+    height: 50px;
+}
+
+h1 {
+    font-family: 'Amatic SC', cursive;
+    color: #1d1d1b;
+    font-size: 4em;
+    text-align: center;
+    background-color: #86bee9;
+    width: 240px;
+    margin: 0 auto;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    z-index: 50;
+}
+
+/* SLIDESHOW */
+.slideshow {
+    background: #fff;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .slides_container {
+    position: relative;
+  }
+  
+  .slides_container figure {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    margin: 0;
+    opacity: 0;
+    -webkit-transition: opacity 1.2s;
+    transition: opacity 1.2s;
+  }
+  
+  #slide1 {
+    position: relative;
+  }
+  
+  .slides_container figure img {
+    display: block;
+  }
+  
+  .slides_container .show {
+    z-index: 3;
+    opacity: 1;
+  }
+  
+  /* next and prev buttons */
+  #next,
+  #prev {
+    position: absolute;
+    color: #1d1d1b;
+    background: rgba(255, 238, 168, .5);
+    top: 50%;
+    z-index: 10;
+    font-size: 3em;
+    opacity: .5;
+  }
+  
+  #next:hover, #prev:hover, nav button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+    
+  #prev {
+    left: 0;
+    padding: 2px 10px 6px 4px;
+  }
+
+  #next {
+    right: 0;
+    padding: 2px 4px 6px 10px;
+  }
+  
+  /* dots navigation */
+  nav {
+    position: relative;
+    z-index: 10;
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 15px;
+  }
+  
+  nav ul>li {
+    display: inline-block;
+    list-style-type: none;
+  }
+
+  button.dot {
+    position: relative;
+    border: 1px;
+    border-color: #ffeea8;
+    border-radius: 100%;
+    background-color: #ffeea8;
+    outline: none;
+    width: 10px;
+    height: 10px;
+    opacity: 0.5;
+  }
+  
+  button.selected {
+    opacity: 1;
+  }
+
+/* ALL SECTIONS */
+.flex_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-family: 'Jura', sans-serif;
+  color: #1d1d1b;
+}
+
+.flex_item {
+  margin: 10px;
+  flex-basis: 45%;
+  padding: 5px;
+}
+
+/* SEARCH SECTION */
+#search,
+#background {
+  background-color: #ffeea8;
+}
+
+#search p {
+  font-size: 1.4em;
+  margin: 0;
+  padding: 3px;
+}
+
+#background {
+  text-align: center;
+}
+
+#background_btn {
+  margin: 0 auto;
+  font-family: 'Jura';
+  font-size: 1em;
+  border: none;
+  padding: 6px;
+  display: block;
+}
+
+#background_btn:hover {
+  cursor: pointer;
+}
+
+.white_btn {
+  background-color: #dcb4d5;
+}
+
+.violet_btn {
+  background-color: #fff;
+}
+
+/* CALCULATORS SECTION */
+
+/* flex item (Loan, Tip itd) */
+h2 {
+  font-family: 'Amatic SC', cursive;
+  color: #1d1d1b;
+  font-size: 2.8em;
+  text-align: left;
+  margin: 0 0 10px 10px;
+}
+
+#calculators_container .flex_item {
+  min-height: 300px;
+}
+
+#calculators_container .flex_item p {
+  display: inline-block;
+  font-size: 1.2em;
+  margin: 0;
+}
+
+/* calc box */
+.calc_box {
+  position: relative;
+  min-height: 230px;
+}
+
+/* inputs and selects */
+#calculators_container input,
+#calculators_container select {
+  background-color: #fff;
+  font-family: 'Jura', sans-serif;
+  color: #353a8d;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #fff;
+  font-size: 1.2em;
+  margin: 2px;
+}
+
+#calculators_container select {
+  cursor: pointer;
+}
+
+#calculators_container input:active,
+#calculators_container input:focus,
+#calculators_container select:active,
+#calculators_container select:focus {
+  border-color: #353a8d;
+}
+
+/* buttons */
+.calc_button {
+  background-color: #353a8d;
+  font-family: 'Jura', sans-serif;
+  font-size: 1.2em;
+  border-style: none;
+  padding: 8px;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+/* calc item */
+.calc_item {
+  margin: 5px 5px 10px 5px;
+}
+
+/* calc result */
+.calc_result {
+  margin: 25px 5px 5px 5px;
+}
+
+#calculators_container .calc_result p {
+  margin-bottom: 10px;
+  width: 100%;
+  font-size: 1.3em;
+}
+
+/* calculators box properties */
+
+/* loan */
+#loan {
+  background-color: #dcb4d5;
+}
+
+/* tip */
+#tip {
+  background-color: #b1d7b6;
+}
+
+/* bmi */
+#calculators_container #bmi {
+  background-color: #c0e5f8;
+  text-align: center;
+}
+#bmi .calc_button {
+  color: #c0e5f8
+}
+
+#bmi .calc_result p {
+  display: inline;
+  padding: 10px;
+}
+
+#bmi_info {
+  display: inline-block;;
+  padding: 10px;
+}
+
+.bmi_normal {
+  background-color: #b1d7b6
+}
+
+/* distance */
+#distance {
+  background-color: #f6b7b8;
+}
+
+/* quote of the day */
+#calculators_container #quote {
+  flex-basis: 92%;
+  background-color: #ffeea8;
+  text-align: center;
+  padding-bottom: 15px;
+  min-height: auto;
+}
+
+#quote .calc_box {
+  min-height: auto;
+}
+
+#quote h2 {
+  text-align: center;
+}
+
+#quote p {
+  padding: 10px;
+}
+
+#quote .calc_button {
+  color: #ffeea8 ;
+}
+
+/* weight and capacity */
+input.value,
+select.unit {
+  width: 45%;
+}
+
+/* weight */
+#weight {
+  background-color: #b1d7b6;
+  text-align: center;
+}
+
+#weight .calc_button {
+  color: #b1d7b6;
+}
+
+/* capacity */
+#capacity {
+  background-color: #c0e5f8;
+  text-align: center;
+}
+
+#capacity .calc_result table {
+  width: 100%;
+  text-align: center;
+  font-size: 1.3em;
+}
+
+#capacity th,
+#capacity td {
+  border-bottom: 1px solid rgba(53, 58, 141, 0.4);
+  margin: 0;
+  padding: 3px 0;
+}
+
+/* FOOTER */
+
+footer .yellow_box {
+  margin: 0 auto;
+  margin-top: 10px;
+  text-align: center;
+}
+
+h3 {
+  font-family: 'Amatic SC', cursive;
+  color: #1d1d1b;
+  font-size: 1.5em;
+  margin: 0;
+  padding-top: 8px;
+}
+
+h3 a {
+  color: #1d1d1b;
+  text-decoration: none;
+}
+
+h3 i {
+  margin-left: 7px;
+}
