@@ -2,9 +2,18 @@
 body {
     margin: 0;
     box-sizing: border-box;
-    background-color: #fff;
 }
 
+/* BACKGROUND CLASS */
+.white_background {
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.violet_background {
+  background-color: #dcb4d5;
+  border-color: #dcb4d5;
+}
 
 /* HEADER */
 header {
@@ -174,14 +183,6 @@ h1 {
   cursor: pointer;
 }
 
-.white_btn {
-  background-color: #dcb4d5;
-}
-
-.violet_btn {
-  background-color: #fff;
-}
-
 /* CALCULATORS SECTION */
 
 /* flex item (Loan, Tip itd) */
@@ -212,12 +213,10 @@ h2 {
 /* inputs and selects */
 #calculators_container input,
 #calculators_container select {
-  background-color: #fff;
   font-family: 'Jura', sans-serif;
   color: #353a8d;
   border-style: solid;
   border-width: 2px;
-  border-color: #fff;
   font-size: 1.2em;
   margin: 2px;
 }
@@ -264,9 +263,6 @@ h2 {
 /* calculators box properties */
 
 /* loan */
-#loan {
-  background-color: #dcb4d5;
-}
 
 /* tip */
 #tip {

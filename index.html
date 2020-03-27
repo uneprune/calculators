@@ -21,13 +21,13 @@
     <!-- responsive style -->
     <link rel="stylesheet" href="css/responsive.css">
 </head>
-<body>
+<body class="white_background">
     <header>
         <div class="yellow_box">
         </div>
         <h1>Calculators</h1>
         <div class="slideshow">
-            <div class="slides_container">
+            <div class="slides_container white_background">
               <figure id="slide1" class="show">
                 <img src="css/photos/calc1.jpg" width="100%" />
               </figure>
@@ -43,7 +43,7 @@
               <div id="prev">&Lang;</div>
               <div id="next">&Rang;</div>
             </div> <!-- // slides -->
-            <nav>
+            <nav class="white_background">
               <ul>
                 <li><button id="dot1" class="dot selected" /></li>
                 <li><button id="dot2" class="dot" /></li>
@@ -53,152 +53,178 @@
             </nav>
           </div>
     </header>
+
     <section id="search_container" class="flex_container">
+
       <div id="search" class="flex_item">
         <p>Search</p>
       </div>
+
       <div id="background" class="flex_item">
-        <button id="background_btn" class="white_btn">Change the background</button>
+        <button id="background_btn" class="violet_background">
+          Change the background
+        </button>
       </div>
+
     </section>
+
     <section id="calculators_container" class="flex_container">
 
-      <div id="loan" class="flex_item">
+      <div id="loan" class="flex_item violet_background">
         <h2>Loan</h2>
         <div class="calc_box">
+
           <div class="calc_item">
             <p>Loan amount:</p>
-            <input type="number">
+            <input class="white_background" type="number">
             <p>PLN</p>
           </div>
           <div class="calc_item">
             <p>Interest:</p>
-            <input type="number">
+            <input class="white_background" type="number">
             <p>%</p>
           </div>
           <div class="calc_item">
             <p>Months:</p>
-            <input type="number">
+            <input class="white_background" type="number">
           </div>
+
           <div class="calc_result">
             <p>Total loan amount to be repaid is 25000 PLN</p><br>
             <p>Monthly payment is 250 PLN</p>
           </div>
+
         </div>
       </div>
 
       <div id="tip" class="flex_item">
         <h2>Tip</h2>
         <div class="calc_box">
+
           <div class="calc_item">
             <p>Bill amount:</p>
-            <input type="number">
+            <input class="white_background" type="number">
             <p>PLN</p>
           </div>
           <div class="calc_item">
             <p>Tip percentage:</p>
-            <input type="number">
+            <input class="white_background" type="number">
             <p>%</p>
           </div>
+
           <div class="calc_result">
             <p>Tip amount is 25000 PLN</p>
             <p>Total amount is 250 PLN</p>
           </div>
+
         </div>
       </div>
 
       <div id="bmi" class="flex_item">
         <h2>BMI</h2>
         <div class="calc_box">
+
           <div class="calc_item">
             <p>Height:</p>
-            <input type="number">
+            <input class="white_background" type="number">
           </div>
           <div class="calc_item">
             <p>Weight:</p>
-            <input type="number">
+            <input class="white_background" type="number">
           </div>
           <button class="calc_button">calculate</button>
+
           <div class="calc_result">
             <p>Your result is 21,2</p>
             <div id="bmi_info" class="bmi_normal">
               <p>Your weight is normal</p>
             </div>
           </div>
+
         </div>
       </div>    
 
       <div id="distance" class="flex_item">
         <h2>Distance</h2>
         <div class="calc_box">
+
           <div class="calc_item">
             <p>Yard:</p>
-            <input type="number">
+            <input class="white_background" type="number">
             <p>yd</p>
           </div>
           <div class="calc_item">
             <p>Foot:</p>
-            <input type="number">
+            <input class="white_background" type="number">
             <p>ft</p>
           </div>
           <div class="calc_item">
             <p>Inch:</p>
-            <input type="number">
+            <input class="white_background" type="number">
             <p>in</p>
           </div>
           <div class="calc_item">
             <p>Meter:</p>
-            <input type="number">
+            <input class="white_background" type="number">
             <p>m</p>
           </div>
           <div class="calc_item">
             <p>Centimeter:</p>
-            <input type="number">
+            <input class="white_background" type="number">
             <p>cm</p>
           </div>
+
         </div>
       </div>
 
       <div id="quote" class="flex_item">
         <h2>Quote of the day</h2>
+
         <div class="calc_box">
           <p>Lorem ipsum lorem ipsum</p> <br>
           <button class="calc_button">new quote</button>
         </div>
+
       </div>
 
       <div id="weight" class="flex_item">
         <h2>Weight</h2>
         <div class="calc_box">
+
           <div class="calc_item">
-            <input type='number' placeholder="value" class="value">
-            <select class="unit">
+            <input type='number' placeholder="value" class="value white_background">
+            <select class="unit white_background">
               <option value="pound">pound</option>
               <option value="ounce">ounce</option>
               <option value="kilogram">kilogram</option>
             </select>
           </div>
+
           <button class="calc_button">calculate</button>
+
           <div class="calc_result">
             <p>Value + unit is</p>
             <p>18 lb [pound]</p>
             <p>20 oz [ounce]</p>
             <p>4 kg [kilogram]</p>
           </div>
+
         </div>
       </div>
 
       <div id="capacity" class="flex_item">
         <h2>Capacity</h2>
         <div class="calc_box">
+
           <div class="calc_item">
-            <input type='number' placeholder="value" class="value">
-            <select class="unit">
+            <input type='number' placeholder="value" class="value white_background">
+            <select class="unit white_background">
               <option value="liter">liter</option>
               <option value="cubic_meter">cubic meter</option>
               <option value="cubic_foot">cubic foot</option>
             </select>
           </div>
+
           <div class="calc_result">
             <table>
               <tr>
@@ -219,6 +245,7 @@
               </tr>
             </table>
           </div>
+
         </div>
       </div>
 
@@ -238,5 +265,6 @@
       </div>
     </footer>
 <script type="text/javascript" src="script/slideshow.js"></script>
+<script type="text/javascript" src="script/background.js"></script>
 </body>
 </html>
