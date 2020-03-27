@@ -5,7 +5,7 @@ const violet_items = document.getElementsByClassName('violet_background')
 
 function changeBackground(){
     let currentClass = button.className;
-    if (currentClass === 'violet_background') {
+    if (currentClass === 'violet_button') {
         for (let i = 0; i<white_items.length; i++) {
             white_items[i].style.backgroundColor = '#dcb4d5';
             white_items[i].style.borderColor = '#dcb4d5';
@@ -13,9 +13,9 @@ function changeBackground(){
         for (let i = 0; i<violet_items.length; i++) {
             violet_items[i].style.backgroundColor = '#fff';
         }
-        button.classList.remove('violet_background');
-        button.classList.add('white_background')
-    } else if (currentClass === 'white_background') {
+        button.classList.remove('violet_button');
+        button.classList.add('white_button')
+    } else if (currentClass === 'white_button') {
         for (let i = 0; i<white_items.length; i++) {
             white_items[i].style.backgroundColor = '#fff';
             white_items[i].style.borderColor = '#fff';
@@ -23,8 +23,8 @@ function changeBackground(){
         for (let i = 0; i<violet_items.length; i++) {
             violet_items[i].style.backgroundColor = '#dcb4d5';
         }
-        button.classList.remove('white_background');
-        button.classList.add('violet_background')
+        button.classList.remove('white_button');
+        button.classList.add('violet_button')
     }
 }
 

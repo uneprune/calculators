@@ -5,12 +5,14 @@ body {
 }
 
 /* BACKGROUND CLASS */
-.white_background {
+.white_background,
+.white_button {
   background-color: #fff;
   border-color: #fff;
 }
 
-.violet_background {
+.violet_background,
+.violet_button {
   background-color: #dcb4d5;
   border-color: #dcb4d5;
 }
