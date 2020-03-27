@@ -161,11 +161,16 @@ h1 {
   background-color: #ffeea8;
 }
 
-#search p {
+#search_input {
   font-size: 1.4em;
   margin: 0;
-  padding: 3px;
+  padding: 0;
   text-align: left;
+  width: 100%;
+  background-color: #ffeea8;
+  border: none;
+  font-family: 'Jura', sans-serif;
+  color: #353a8d;
 }
 
 #background {
