@@ -1,0 +1,138 @@
+@media (max-width: 964px) {
+    #bmi_info {
+        margin-top: 7px;
+    }
+}
+
+@media (max-width: 868px) {
+    #calculators_container .flex_item,
+    #calculators_container #quote {
+        flex-basis: 80%;
+        min-height: auto;
+    }
+    .calc_box {
+        min-height: auto;
+    }
+    #bmi_info {
+        margin-top: 0px;
+    }
+}
+
+@media (max-width: 600px) {
+    #search_container .flex_item {
+        flex-basis: 80%;
+    }
+
+    .slides_container figure {
+        margin: 10px;
+        width: 97%;
+    }
+
+    div#prev,
+    div#next,
+    .slideshow nav ul li,
+    span.phone_number,
+    #background {
+        display: none;
+    }
+}
+
+@media (max-width: 542px) {
+    #search p,
+    #calculators_container .flex_item p,
+    #calculators_container input,
+    #calculators_container select,
+    .calc_button,
+    #capacity .calc_result table {
+        font-size: 1em;
+    }
+
+    h2 {
+        font-size: 2em
+    }
+
+    h3 {
+        font-size: 1.3em;
+    }
+
+    .calc_result {
+        margin-top: 15px;
+    }
+
+    #bmi_info {
+        margin-top: 7px;
+    }
+}
+
+@media (max-width: 443px) {
+    .slideshow {
+        display: none;
+    }
+
+    h1 {
+        position: relative;
+        top: -20px;
+        font-size: 3em;
+        width: 200px;
+    }
+
+    .flex_item {
+        margin: 4px;
+        padding: 3px;
+    }
+
+    #search p,
+    #calculators_container .flex_item p,
+    #calculators_container input,
+    #calculators_container select,
+    .calc_button,
+    #capacity .calc_result table {
+        font-size: 0.8em;
+    }
+
+    .calc_result {
+        margin-top: 9px;
+    }
+
+    .calc_item {
+        margin: 0px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+        margin: 0 0 0 5px;
+    }
+
+    #calculators_container .calc_result p {
+        margin-bottom: 4px;
+    }
+
+    #bmi_info {
+        padding: 3px;
+        margin: 0;
+    }
+    .calc_result #bmi_info p {
+        margin: 0;
+        padding: 3px;
+    }
+
+    .calc_button {
+        margin-top: 5px;
+    }
+
+    h3 {
+        font-size: 1em;
+    }
+}
+
+
+@media (max-width: 345px) {
+    #search p,
+    #calculators_container .flex_item p,
+    #calculators_container input,
+    #calculators_container select,
+    .calc_button,
+    #capacity .calc_result table {
+        font-size: 0.6em;
+    }
+}
