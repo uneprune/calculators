@@ -43,7 +43,8 @@
     #calculators_container input,
     #calculators_container select,
     .calc_button,
-    #capacity .calc_result table {
+    #capacity .calc_result table,
+    #not_found {
         font-size: 1em;
     }
 
@@ -86,7 +87,8 @@
     #calculators_container input,
     #calculators_container select,
     .calc_button,
-    #capacity .calc_result table {
+    #capacity .calc_result table,
+    #not_found {
         font-size: 0.8em;
     }
 
@@ -132,7 +134,8 @@
     #calculators_container input,
     #calculators_container select,
     .calc_button,
-    #capacity .calc_result table {
+    #capacity .calc_result table,
+    #not_found {
         font-size: 0.6em;
     }
 }

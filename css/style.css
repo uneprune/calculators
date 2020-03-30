@@ -364,8 +364,17 @@ select.unit {
   padding: 3px 0;
 }
 
-/* FOOTER */
+/* not found information */
+#not_found {
+  text-align: center;
+  font-family: 'Jura', sans-serif;
+  color: #353a8d;
+  font-size: 1.3em;
+  display: none;
+}
 
+
+/* FOOTER */
 footer .yellow_box {
   margin: 0 auto;
   margin-top: 10px;
