@@ -76,22 +76,22 @@
 
           <div class="calc_item">
             <p>Loan amount:</p>
-            <input class="white_background" type="number">
+            <input id="loan_amount" class="white_background" placeholder="25000" type="number" onchange="loan()">
             <p>PLN</p>
           </div>
           <div class="calc_item">
             <p>Interest:</p>
-            <input class="white_background" type="number">
+            <input id="loan_interest" class="white_background" placeholder="20" type="number" onchange="loan()">
             <p>%</p>
           </div>
           <div class="calc_item">
             <p>Months:</p>
-            <input class="white_background" type="number">
+            <input id="loan_months" class="white_background" placeholder="12" type="number" onchange="loan()">
           </div>
 
-          <div class="calc_result">
-            <p>Total loan amount to be repaid is 25000 PLN</p><br>
-            <p>Monthly payment is 250 PLN</p>
+          <div id="loan_result" class="calc_result">
+            <p id="total_loan">Total loan amount to be repaid is 30000.00 PLN</p><br>
+            <p id="monthly_payment">Monthly payment is 2500.00 PLN</p>
           </div>
 
         </div>
@@ -269,5 +269,6 @@
 <script type="text/javascript" src="script/slideshow.js"></script>
 <script type="text/javascript" src="script/filter.js"></script>
 <script type="text/javascript" src="script/background.js"></script>
+<script type="text/javascript" src="script/loan.js"></script>
 </body>
 </html>
