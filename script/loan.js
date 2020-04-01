@@ -2,6 +2,7 @@ function loan(){
     let amount = parseInt(document.querySelector('#loan_amount').value);
     let interest = parseInt(document.querySelector('#loan_interest').value);
     let months = parseInt(document.querySelector('#loan_months').value);
+    
     if (amount && interest && months){
         let totalLoan = (amount + (amount * interest * 0.01)).toFixed(2);
         let monthlyPayment = (totalLoan / months).toFixed(2);

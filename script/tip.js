@@ -1,0 +1,36 @@
+let bill = document.querySelector('#bill_amount')
+let tip = document.querySelector('#tip_percentage')
+
+let tipValueText = document.querySelector('#tip_value')
+let totalTipText = document.querySelector('#total_tip')
+let tipResultText = document.querySelector('#tip_result')
+
+function tipCalc(){
+    let billAmount = parseInt(bill.value)
+    let tipPercentage = parseInt(tip.value)
+
+    if (billAmount && tipPercentage) {
+        let tipValue = billAmount * tipPercentage * 0.01;
+        let totalTip = billAmount + tipValue;
+
+        tipValueText.innerHTML = `Tip amount is ${tipValue} PLN`
+        totalTipText.innerHTML = `Total amount is ${totalTip} PLN`
+        tipResultText.style.color = '#1d1d1b';
+    } else if ((billAmount === 0) || (tipPercentage === 0)) {
+        tipValueText.innerHTML = `Please, fill all fields`
+        totalTipText.innerHTML = `with numbers greater than 0`
+        tipResultText.style.color = 'red';
+    } else if (billAmount || tipPercentage) {
+        tipValueText.innerHTML = `Your result will be here`
+        totalTipText.innerHTML = `Please, fill all fields with numbers`
+        tipResultText.style.color = 'white';
+    } else {
+        tipValueText.innerHTML = `Your result will be here`
+        totalTipText.innerHTML = `Please, fill all fields with numbers`
+        tipResultText.style.color = '#1d1d1b';
+    }
+}
+
+
+bill.addEventListener('keyup', (e) => tipCalc());
+tip.addEventListener('keyup', (e) => tipCalc());

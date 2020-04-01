@@ -103,18 +103,18 @@
 
           <div class="calc_item">
             <p>Bill amount:</p>
-            <input class="white_background" type="number">
+            <input id="bill_amount" class="white_background" type="number">
             <p>PLN</p>
           </div>
           <div class="calc_item">
             <p>Tip percentage:</p>
-            <input class="white_background" type="number">
+            <input id="tip_percentage" class="white_background" type="number">
             <p>%</p>
           </div>
 
-          <div class="calc_result">
-            <p>Tip amount is 25000 PLN</p>
-            <p>Total amount is 250 PLN</p>
+          <div id="tip_result" class="calc_result">
+            <p id="tip_value">Your result will be here</p>
+            <p id="total_tip">Please, fill all fields with numbers</p>
           </div>
 
         </div>
@@ -270,5 +270,6 @@
 <script type="text/javascript" src="script/filter.js"></script>
 <script type="text/javascript" src="script/background.js"></script>
 <script type="text/javascript" src="script/loan.js"></script>
+<script type="text/javascript" src="script/tip.js"></script>
 </body>
 </html>
