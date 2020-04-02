@@ -126,18 +126,20 @@
 
           <div class="calc_item">
             <p>Height:</p>
-            <input class="white_background" type="number">
+            <input id="bmi_height" class="white_background" value="180" type="number">
+            <p>cm</p>
           </div>
           <div class="calc_item">
             <p>Weight:</p>
-            <input class="white_background" type="number">
+            <input id="bmi_weight" class="white_background" value="80" type="number">
+            <p>kg</p>
           </div>
-          <button class="calc_button">calculate</button>
+          <button id="bmi_btn" class="calc_button" onclick="bmi()">calculate</button>
 
           <div class="calc_result">
-            <p>Your result is 21,2</p>
+            <p id="bmi_result">Your result is 24,7</p>
             <div id="bmi_info" class="bmi_normal">
-              <p>Your weight is normal</p>
+              <p id="weight_info">Your weight is normal</p>
             </div>
           </div>
 
@@ -271,5 +273,6 @@
 <script type="text/javascript" src="script/background.js"></script>
 <script type="text/javascript" src="script/loan.js"></script>
 <script type="text/javascript" src="script/tip.js"></script>
+<script type="text/javascript" src="script/bmi.js"></script>
 </body>
 </html>
