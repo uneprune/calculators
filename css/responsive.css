@@ -44,8 +44,13 @@
     #calculators_container select,
     .calc_button,
     #capacity .calc_result table,
-    #not_found {
+    #not_found,
+    #quote_text {
         font-size: 1em;
+    }
+
+    #quote_author {
+        font-size: 0.8em;
     }
 
     h2 {
@@ -88,8 +93,14 @@
     #calculators_container select,
     .calc_button,
     #capacity .calc_result table,
-    #not_found {
+    #not_found,
+    #quote_text {
         font-size: 0.8em;
+    }
+
+    #quote_author {
+        font-size: 0.6em;
+        margin-bottom: 8px;
     }
 
     .calc_result {
@@ -135,7 +146,12 @@
     #calculators_container select,
     .calc_button,
     #capacity .calc_result table,
-    #not_found {
+    #not_found,
+    #quote_text {
         font-size: 0.6em;
+    }
+
+    #quote_author {
+        font-size: 0.4em;
     }
 }
