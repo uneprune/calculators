@@ -322,13 +322,13 @@ h2 {
 }
 
 #quote_text {
-  font-size: 1.2em;
+  font-size: 1.3em;
   padding-left: 10px;
   padding-right: 10px;
 }
 
 #quote_author {
-  font-size: 1em;
+  font-size: 1.1em;
   margin: 5px 0 15px 0;
   font-style: italic;
 }
@@ -353,16 +353,29 @@ select.unit {
   color: #b1d7b6;
 }
 
+#weight_selected_value {
+  font-weight: 700;
+}
+
+#weight .calc_result p#pound_result {
+  display: none;
+}
+
 /* capacity */
 #capacity {
   background-color: #c0e5f8;
   text-align: center;
 }
 
-#capacity .calc_result table {
+#capacity #capacity_table {
   width: 100%;
   text-align: center;
   font-size: 1.3em;
+  display: table;
+}
+
+#capacity #capacity_nan {
+  display: none;
 }
 
 #capacity th,

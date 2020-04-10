@@ -7,7 +7,7 @@
     <title>Calculators</title>
 
     <!-- Jura Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;700&display=swap" rel="stylesheet">
 
     <!-- Amatic SC Font -->
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
@@ -195,21 +195,23 @@
         <div class="calc_box">
 
           <div class="calc_item">
-            <input type='number' placeholder="value" class="value white_background">
-            <select class="unit white_background">
+            <input id="weight_value" type='number' value='15' class="value white_background">
+            <select id="weight_select_box" class="unit white_background">
               <option value="pound">pound</option>
               <option value="ounce">ounce</option>
+              <option value="gram">gram</option>
               <option value="kilogram">kilogram</option>
             </select>
           </div>
 
-          <button class="calc_button">calculate</button>
+          <button class="calc_button" onclick="weightCalc()" >calculate</button>
 
           <div class="calc_result">
-            <p>Value + unit is</p>
-            <p>18 lb [pound]</p>
-            <p>20 oz [ounce]</p>
-            <p>4 kg [kilogram]</p>
+            <p id="weight_selected_value"></p>
+            <p id="pound_result"></p>
+            <p id="ounce_result" ></p>
+            <p id="gram_result" ></p>
+            <p id="kilogram_result"></p>
           </div>
 
         </div>
@@ -220,8 +222,8 @@
         <div class="calc_box">
 
           <div class="calc_item">
-            <input type='number' placeholder="value" class="value white_background">
-            <select class="unit white_background">
+            <input id="capacity_value" type='number' placeholder="value" class="value white_background" onchange="capacityCalc()">
+            <select id="capacity_select_box" class="unit white_background" onchange="capacityCalc()">
               <option value="liter">liter</option>
               <option value="cubic_meter">cubic meter</option>
               <option value="cubic_foot">cubic foot</option>
@@ -229,24 +231,25 @@
           </div>
 
           <div class="calc_result">
-            <table>
+            <table id="capacity_table">
               <tr>
                 <th>Unit</th>
                 <th>Value</th>
               </tr>
               <tr>
                 <td>Liter</td>
-                <td>12 l</td>
+                <td id="liter_result"></td>
               </tr>
               <tr>
                 <td>Cubic meter</td>
-                <td>13.8 m3</td>
+                <td id="cubic_meter_result"></td>
               </tr>
                 <tr>
                 <td>Cubic foot</td>
-                <td>8888,5 ft3</td>
+                <td id="cubic_foot_result"></td>
               </tr>
             </table>
+            <p id="capacity_nan">Please fill first field with number grater than 0</p>
           </div>
 
         </div>
@@ -269,14 +272,16 @@
         </h3>
       </div>
     </footer>
-<script type="text/javascript" src="script/slideshow.js"></script>
-<script type="text/javascript" src="script/filter.js"></script>
-<script type="text/javascript" src="script/background.js"></script>
-<script type="text/javascript" src="script/loan.js"></script>
-<script type="text/javascript" src="script/tip.js"></script>
-<script type="text/javascript" src="script/bmi.js"></script>
-<script type="text/javascript" src="script/distance.js"></script>
-<script type="text/javascript" src="script/quote.js"></script>
 
+  <script type="text/javascript" src="script/slideshow.js"></script>
+  <script type="text/javascript" src="script/filter.js"></script>
+  <script type="text/javascript" src="script/background.js"></script>
+  <script type="text/javascript" src="script/loan.js"></script>
+  <script type="text/javascript" src="script/tip.js"></script>
+  <script type="text/javascript" src="script/bmi.js"></script>
+  <script type="text/javascript" src="script/distance.js"></script>
+  <script type="text/javascript" src="script/quote.js"></script>
+  <script type="text/javascript" src="script/weight.js"></script>
+  <script type="text/javascript" src="script/capacity.js"></script>
 </body>
 </html>

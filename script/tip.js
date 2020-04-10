@@ -6,11 +6,11 @@ let totalTipText = document.querySelector('#total_tip')
 let tipResultText = document.querySelector('#tip_result')
 
 function tipCalc(){
-    let billAmount = parseInt(bill.value)
-    let tipPercentage = parseInt(tip.value)
+    let billAmount = parseFloat(bill.value)
+    let tipPercentage = parseFloat(tip.value)
 
     if (billAmount && tipPercentage) {
-        let tipValue = parseInt((billAmount * tipPercentage/100).toFixed(2));
+        let tipValue = parseFloat((billAmount * tipPercentage/100).toFixed(2));
         let totalTip = (billAmount + tipValue).toFixed(2);
 
         tipValueText.innerHTML = `Tip amount is ${tipValue} PLN`
