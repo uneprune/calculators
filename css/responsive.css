@@ -43,7 +43,7 @@
     #calculators_container input,
     #calculators_container select,
     .calc_button,
-    #capacity_table,
+    #capacity #capacity_table,
     #not_found,
     #quote_text {
         font-size: 1em;
@@ -92,7 +92,7 @@
     #calculators_container input,
     #calculators_container select,
     .calc_button,
-    #capacity_table,
+    #capacity #capacity_table,
     #not_found,
     #quote_text {
         font-size: 0.8em;
@@ -145,7 +145,7 @@
     #calculators_container input,
     #calculators_container select,
     .calc_button,
-    #capacity_table,
+    #capacity #capacity_table,
     #not_found,
     #quote_text {
         font-size: 0.6em;
