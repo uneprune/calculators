@@ -10,8 +10,8 @@ function tipCalc(){
     let tipPercentage = parseInt(tip.value)
 
     if (billAmount && tipPercentage) {
-        let tipValue = billAmount * tipPercentage * 0.01;
-        let totalTip = billAmount + tipValue;
+        let tipValue = parseInt((billAmount * tipPercentage/100).toFixed(2));
+        let totalTip = (billAmount + tipValue).toFixed(2);
 
         tipValueText.innerHTML = `Tip amount is ${tipValue} PLN`
         totalTipText.innerHTML = `Total amount is ${totalTip} PLN`
