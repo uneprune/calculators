@@ -31,7 +31,6 @@
     div#prev,
     div#next,
     .slideshow nav ul li,
-    span.phone_number,
     #background {
         display: none;
     }

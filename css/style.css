@@ -9,12 +9,24 @@ body {
 .white_button {
   background-color: #fff;
   border-color: #fff;
+  transition: 0.5s;
+}
+
+.white_button:active,
+.white_button:hover {
+  color: #dcb4d5;
 }
 
 .violet_background,
 .violet_button {
   background-color: #dcb4d5;
   border-color: #dcb4d5;
+  transition: 0.5s;
+}
+
+.violet_button:active,
+.violet_button:hover {
+  color: #fff;
 }
 
 /* HEADER */
