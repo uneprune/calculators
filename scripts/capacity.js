@@ -6,22 +6,21 @@ function capacityCalc(){
     let meterValue = document.querySelector('#cubic_meter_result')
     let footValue = document.querySelector('#cubic_foot_result')
 
-    if (isNaN(inputValue) === false){
+    if (!(isNaN(inputValue))){
         document.querySelector('#capacity_table').style.display = 'table';
         document.querySelector('#capacity_nan').style.display = 'none';
-        document.querySelector('#capacity_nan').style.color = '#1d1d1b';
         if (selectedOption === 'liter') {
-            literValue.innerHTML = `${(inputValue).toFixed(4)} l`;
-            meterValue.innerHTML = `${(inputValue*0.0010).toFixed(4)} m3`;
-            footValue.innerHTML = `${(inputValue*0.0353).toFixed(4)} ft3;`;
+            literValue.innerHTML = `${(inputValue).toFixed(2)} l`;
+            meterValue.innerHTML = `${(inputValue*0.0010).toFixed(2)} m3`;
+            footValue.innerHTML = `${(inputValue*0.0353).toFixed(2)} ft3;`;
         } else if (selectedOption === 'cubic meter') {
-            literValue.innerHTML = `${(inputValue*1000).toFixed(4)} l`;
-            meterValue.innerHTML = `${(inputValue).toFixed(4)} m3`;
-            footValue.innerHTML = `${(inputValue*35.3147).toFixed(4)} ft3;`
+            literValue.innerHTML = `${(inputValue*1000).toFixed(2)} l`;
+            meterValue.innerHTML = `${(inputValue).toFixed(2)} m3`;
+            footValue.innerHTML = `${(inputValue*35.3147).toFixed(2)} ft3;`
         } else if (selectedOption === 'cubic foot') {
-            literValue.innerHTML = `${(inputValue*28.3168).toFixed(4)} l`;
-            meterValue.innerHTML = `${(inputValue*0.0283).toFixed(4)} m3`;
-            footValue.innerHTML = `${(inputValue).toFixed(4)} ft3;`
+            literValue.innerHTML = `${(inputValue*28.3168).toFixed(2)} l`;
+            meterValue.innerHTML = `${(inputValue*0.0283).toFixed(2)} m3`;
+            footValue.innerHTML = `${(inputValue).toFixed(2)} ft3;`
         }
     } else {
         document.querySelector('#capacity_table').style.display = 'none';

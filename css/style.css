@@ -395,6 +395,7 @@ select.unit {
   border-bottom: 1px solid rgba(53, 58, 141, 0.4);
   margin: 0;
   padding: 3px 0;
+  width: 50%;
 }
 
 /* not found information */
