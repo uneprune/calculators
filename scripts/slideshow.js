@@ -1,12 +1,12 @@
 let currentNumber = 1;
 
-function selectDot (newNumber) {
+function selectDot(newNumber) {
     document.querySelector('.selected').classList.remove('selected');
     document.querySelector('#dot' + newNumber).classList.add('selected');
     currentNumber = newNumber;
 }
 
-function showSlide (newNumber) {
+function showSlide(newNumber) {
     document.querySelector('.show').classList.remove('show');
     document.querySelector('#slide' + newNumber).classList.add('show');
     currentNumber = newNumber;

@@ -1,11 +1,10 @@
 let bill = document.querySelector('#bill_amount')
 let tip = document.querySelector('#tip_percentage')
 
-let tipValueText = document.querySelector('#tip_value')
-let totalTipText = document.querySelector('#total_tip')
-let tipResultText = document.querySelector('#tip_result')
-
 function tipCalc(){
+    let tipValueText = document.querySelector('#tip_value')
+    let totalTipText = document.querySelector('#total_tip')
+    let tipResultText = document.querySelector('#tip_result')
     let billAmount = parseFloat(bill.value)
     let tipPercentage = parseFloat(tip.value)
 
@@ -30,7 +29,6 @@ function tipCalc(){
         tipResultText.style.color = '#1d1d1b';
     }
 }
-
 
 bill.addEventListener('keyup', (e) => tipCalc());
 tip.addEventListener('keyup', (e) => tipCalc());
