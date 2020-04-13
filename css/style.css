@@ -204,6 +204,14 @@ h1 {
 
 /* CALCULATORS SECTION */
 
+.error {
+  color: red;
+}
+
+.none_display {
+  display: none;
+}
+
 /* flex item (Loan, Tip itd) */
 h2 {
   font-family: 'Amatic SC', cursive;
@@ -302,13 +310,10 @@ h2 {
   padding: 10px;
 }
 
-#bmi_info {
+.bmi_info_color {
+  background-color: #b1d7b6;
   display: inline-block;;
   padding: 10px;
-}
-
-.bmi_normal {
-  background-color: #b1d7b6
 }
 
 /* distance */

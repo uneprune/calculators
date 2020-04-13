@@ -57,7 +57,7 @@
     <section id="search_container" class="flex_container">
 
       <div id="search" class="flex_item">
-        <input type="text" placeholder="search" id="search_input">
+        <input type="text" placeholder="search" id="search_input"/>
       </div>
 
       <div id="background" class="flex_item">
@@ -76,21 +76,21 @@
 
           <div class="calc_item">
             <p>Loan amount:</p>
-            <input id="loan_amount" class="white_background" value="2500" type="number" onchange="loan()">
+            <input id="loan_amount" class="white_background" value="2500" type="number" onchange="loan()"/>
             <p>PLN</p>
           </div>
           <div class="calc_item">
             <p>Interest:</p>
-            <input id="loan_interest" class="white_background" value="2" type="number" onchange="loan()">
+            <input id="loan_interest" class="white_background" value="2" type="number" onchange="loan()"/>
             <p>%</p>
           </div>
           <div class="calc_item">
             <p>Months:</p>
-            <input id="loan_months" class="white_background" value="12" type="number" onchange="loan()">
+            <input id="loan_months" class="white_background" value="12" type="number" onchange="loan()"/>
           </div>
 
           <div id="loan_result" class="calc_result">
-            <p id="total_loan"></p><br>
+            <p id="total_loan"></p><br/>
             <p id="monthly_payment"></p>
           </div>
 
@@ -103,18 +103,18 @@
 
           <div class="calc_item">
             <p>Bill amount:</p>
-            <input id="bill_amount" class="white_background" type="number">
+            <input id="bill_amount" class="white_background" type="number"/>
             <p>PLN</p>
           </div>
           <div class="calc_item">
             <p>Tip percentage:</p>
-            <input id="tip_percentage" class="white_background" type="number">
+            <input id="tip_percentage" class="white_background" type="number"/>
             <p>%</p>
           </div>
 
           <div id="tip_result" class="calc_result">
-            <p id="tip_value">Your result will be here</p>
-            <p id="total_tip">Please, fill all fields with numbers</p>
+            <p id="tip_amount">Your result will be here</p>
+            <p id="total_amount">Please, fill all fields with numbers</p>
           </div>
 
         </div>
@@ -126,23 +126,22 @@
 
           <div class="calc_item">
             <p>Height:</p>
-            <input id="bmi_height" class="white_background" value="180" type="number">
+            <input id="bmi_height" class="white_background" value="180" type="number"/>
             <p>cm</p>
           </div>
           <div class="calc_item">
             <p>Weight:</p>
-            <input id="bmi_weight" class="white_background" value="80" type="number">
+            <input id="bmi_weight" class="white_background" value="80" type="number"/>
             <p>kg</p>
           </div>
           <button id="bmi_btn" class="calc_button" onclick="bmi()">calculate</button>
 
           <div class="calc_result">
             <p id="bmi_result">Your result is 24,7</p>
-            <div id="bmi_info" class="bmi_normal">
+            <div id="bmi_info" class="bmi_info_color">
               <p id="weight_info">Your weight is normal</p>
             </div>
           </div>
-
         </div>
       </div>    
 
@@ -152,27 +151,27 @@
 
           <div class="calc_item">
             <p>Yard:</p>
-            <input id="yard" class="white_background" type="number" value="1">
+            <input id="yard" class="white_background" type="number" value="0.00"/>
             <p>yd</p>
           </div>
           <div class="calc_item">
             <p>Foot:</p>
-            <input id="foot" class="white_background" type="number" value="3">
+            <input id="foot" class="white_background" type="number" value="0.00"/>
             <p>ft</p>
           </div>
           <div class="calc_item">
             <p>Inch:</p>
-            <input id="inch" class="white_background" type="number" value="36">
+            <input id="inch" class="white_background" type="number" value="0.00"/>
             <p>in</p>
           </div>
           <div class="calc_item">
             <p>Meter:</p>
-            <input id="meter" class="white_background" type="number" value="0.9144">
+            <input id="meter" class="white_background" type="number" value="0.00"/>
             <p>m</p>
           </div>
           <div class="calc_item">
             <p>Centimeter:</p>
-            <input id="centimeter" class="white_background" type="number" value="91.44">
+            <input id="centimeter" class="white_background" type="number" value="0.00"/>
             <p>cm</p>
           </div>
 
@@ -195,7 +194,7 @@
         <div class="calc_box">
 
           <div class="calc_item">
-            <input id="weight_value" type='number' value='15' class="value white_background">
+            <input id="weight_value" type='number' value='15' class="value white_background"/>
             <select id="weight_select_box" class="unit white_background">
               <option value="pound">pound</option>
               <option value="ounce">ounce</option>
@@ -204,7 +203,7 @@
             </select>
           </div>
 
-          <button class="calc_button" onclick="weightCalc()" >calculate</button>
+          <button class="calc_button" onclick="weightCalc()">calculate</button>
 
           <div class="calc_result">
             <p id="weight_selected_value"></p>
@@ -222,7 +221,7 @@
         <div class="calc_box">
 
           <div class="calc_item">
-            <input id="capacity_value" type='number' placeholder="value" class="value white_background" onchange="capacityCalc()">
+            <input id="capacity_value" type='number' placeholder="value" class="value white_background" onchange="capacityCalc()"/>
             <select id="capacity_select_box" class="unit white_background" onchange="capacityCalc()">
               <option value="liter">liter</option>
               <option value="cubic_meter">cubic meter</option>

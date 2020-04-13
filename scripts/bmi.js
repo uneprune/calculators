@@ -5,10 +5,10 @@ function bmi() {
     let bmiInfo = document.querySelector('#bmi_info')
     let weightInfo = document.querySelector('#weight_info')
 
-    if (height && weight) {
+    if (height>0 && weight>0) {
         let result = (weight / (height * height)).toFixed(1)
         bmiResult.innerHTML = `Your result is ${result}`;
-        bmiResult.style.color = '#1d1d1b';
+        bmiResult.classList.remove('error');
         bmiInfo.style.display = 'inline-block';
         if (result < 18.5) {
             weightInfo.innerHTML = `You are underweight`;
@@ -23,13 +23,9 @@ function bmi() {
             weightInfo.innerHTML = `You are obese`;
             bmiInfo.style.backgroundColor = '#f6b7b8';
         }
-    } else if (height === 0 || weight === 0){
-        bmiResult.innerHTML = `Please, fill all fields with numbers greater than 0 `;
-        bmiResult.style.color = 'red'
-        bmiInfo.style.display = 'none';
     } else {
-        bmiResult.innerHTML = `Please, fill all fields`;
-        bmiResult.style.color = 'red'
+        bmiResult.innerHTML = `Please, fill all fields<br>with numbers greater than 0 `;
+        bmiResult.classList.add('error');
         bmiInfo.style.display = 'none';
     }
 }

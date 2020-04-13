@@ -2,31 +2,30 @@ let bill = document.querySelector('#bill_amount')
 let tip = document.querySelector('#tip_percentage')
 
 function tipCalc(){
-    let tipValueText = document.querySelector('#tip_value')
-    let totalTipText = document.querySelector('#total_tip')
+    let tipAmountText = document.querySelector('#tip_amount')
+    let totalAmountText = document.querySelector('#total_amount')
     let tipResultText = document.querySelector('#tip_result')
     let billAmount = parseFloat(bill.value)
     let tipPercentage = parseFloat(tip.value)
 
-    if (billAmount && tipPercentage) {
+    if ((billAmount>0) && (tipPercentage>0)) {
         let tipValue = parseFloat((billAmount * tipPercentage/100).toFixed(2));
-        let totalTip = (billAmount + tipValue).toFixed(2);
-
-        tipValueText.innerHTML = `Tip amount is ${tipValue} PLN`
-        totalTipText.innerHTML = `Total amount is ${totalTip} PLN`
-        tipResultText.style.color = '#1d1d1b';
-    } else if ((billAmount === 0) || (tipPercentage === 0)) {
-        tipValueText.innerHTML = `Please, fill all fields`
-        totalTipText.innerHTML = `with numbers greater than 0`
-        tipResultText.style.color = 'red';
-    } else if (billAmount || tipPercentage) {
-        tipValueText.innerHTML = `Your result will be here`
-        totalTipText.innerHTML = `Please, fill all fields with numbers`
-        tipResultText.style.color = 'white';
+        let totalAmount = (billAmount + tipValue).toFixed(2);
+        tipAmountText.innerHTML = `Tip amount is ${tipValue} PLN`;
+        totalAmountText.innerHTML = `Total amount is ${totalAmount} PLN`;
+        tipResultText.classList.remove('error');
+    } else if ((billAmount === 0 && tipPercentage>0) || (billAmount>0 && tipPercentage === 0) || (billAmount === 0 && tipPercentage === 0)) {
+        tipAmountText.innerHTML = `Tip amount is 0.00 PLN`;
+        totalAmountText.innerHTML = `Total amount is ${billAmount.toFixed(2)} PLN`;
+        tipResultText.classList.remove('error');
+    } else if ((billAmount<0) || (tipPercentage<0)) {
+        tipAmountText.innerHTML = `Please, fill all fields`;
+        totalAmountText.innerHTML = `with numbers grater than 0`;
+        tipResultText.classList.add('error');
     } else {
-        tipValueText.innerHTML = `Your result will be here`
-        totalTipText.innerHTML = `Please, fill all fields with numbers`
-        tipResultText.style.color = '#1d1d1b';
+        tipAmountText.innerHTML = `Your result will be here`;
+        totalAmountText.innerHTML = `Please, fill all fields with numbers`;
+        tipResultText.classList.remove('error');
     }
 }
 
