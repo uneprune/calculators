@@ -8,7 +8,7 @@ function weightCalc(){
     let gramResult = document.querySelector('#gram_result')
     let kilogramResult = document.querySelector('#kilogram_result')
 
-    if (!isNaN(inputValue)) {
+    if ((!isNaN(inputValue)) && inputValue>=0) {
         poundResult.style.display = 'inline-block';
         ounceResult.style.display = 'inline-block';
         gramResult.style.display = 'inline-block';
@@ -45,7 +45,7 @@ function weightCalc(){
                 gramResult.innerHTML = `${(inputValue*1000).toFixed(2)} g [gram]`;
         }
     } else {
-        selectedValue.innerHTML = `Please fill first field with number grater than 0`;
+        selectedValue.innerHTML = `Please fill first field<br>with number grater than 0`;
         selectedValue.style.fontWeight = 'normal';
         selectedValue.style.color = 'red';
         poundResult.style.display = 'none';

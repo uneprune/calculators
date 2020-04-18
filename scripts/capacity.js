@@ -6,7 +6,7 @@ function capacityCalc(){
     let meterValue = document.querySelector('#cubic_meter_result')
     let footValue = document.querySelector('#cubic_foot_result')
 
-    if (!(isNaN(inputValue))){
+    if ((!isNaN(inputValue)) && inputValue>=0){
         document.querySelector('#capacity_table').style.display = 'table';
         document.querySelector('#capacity_nan').style.display = 'none';
         if (selectedOption === 'liter') {

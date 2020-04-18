@@ -25,7 +25,6 @@ function removeError(){
 }
 
 yard.addEventListener('keyup', (e) => {
-    console.log(yard.value);
     if (yard.value>=0){
         removeError();
         foot.value = (yard.value * 3).toFixed(2);
