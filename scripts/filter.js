@@ -15,9 +15,5 @@ search.addEventListener('keyup', (e) => {
             item.style.display = 'none'
         }
     })
-    if (counter === 0) {
-        notFound.style.display = 'block'
-    } else {
-        notFound.style.display = 'none'
-    }
+    notFound.style.display = counter === 0 ? 'block' : 'none';
 })

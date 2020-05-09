@@ -7,27 +7,23 @@ const white = '#fff';
 
 function changeBackground(){
     let currentClass = button.className;
+    let addColor = white;
+    let removeColor = violet;
+    let addClassName = 'violet_button';
     if (currentClass === 'violet_button') {
-        for (item of whiteItems) {
-            item.style.backgroundColor = violet;
-            item.style.borderColor = violet;
-        };
-        for (item of violetItems) {
-            item.style.backgroundColor = white
-        };
-        button.classList.remove('violet_button');
-        button.classList.add('white_button')
-    } else if (currentClass === 'white_button') {
-        for (item of whiteItems) {
-            item.style.backgroundColor = white;
-            item.style.borderColor = white;
-        }
-        for (item of violetItems) {
-            item.style.backgroundColor = violet;
-        }
-        button.classList.remove('white_button');
-        button.classList.add('violet_button')
+        addColor = violet;
+        removeColor = white;
+        addClassName = 'white_button';
+    };
+    for (item of whiteItems) {
+        item.style.backgroundColor = addColor;
+        item.style.borderColor = addColor;
+    };
+    for (item of violetItems) {
+        item.style.backgroundColor = removeColor;
+    };
+    button.classList.remove(currentClass);
+    button.classList.add(addClassName);
     }
-}
 
 button.addEventListener('click', changeBackground)
