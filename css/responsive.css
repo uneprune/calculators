@@ -37,7 +37,7 @@
 }
 
 @media (max-width: 542px) {
-    #search p,
+    #search input,
     #calculators_container .flex_item p,
     #calculators_container input,
     #calculators_container select,
@@ -86,7 +86,7 @@
         padding: 3px;
     }
 
-    #search p,
+    #search input,
     #calculators_container .flex_item p,
     #calculators_container input,
     #calculators_container select,

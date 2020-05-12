@@ -29,16 +29,20 @@
         <div class="slideshow">
             <div class="slides_container white_background">
               <figure id="slide1" class="show">
-                <img src="css/photos/calc1.jpg" alt="blue and yellow calculators" />
+                <img src="css/photos/calc1.jpg" alt="calculators" />
+                <figcaption>blue and yellow calculators</figcaption>
               </figure>
               <figure id="slide2">
-                <img src="css/photos/calc2.jpg" alt="all calculators" />
+                <img src="css/photos/calc2.jpg" alt="calculators" />
+                <figcaption>all calculators</figcaption>
               </figure>
               <figure id="slide3">
-                <img src="css/photos/calc3.jpg" alt="green and blue calculators" />
+                <img src="css/photos/calc3.jpg" alt="calculators" />
+                <figcaption>green and blue calculators</figcaption>
               </figure>
               <figure id="slide4">
-                <img src="css/photos/calc4.jpg" alt="pink and green calculators" />
+                <img src="css/photos/calc4.jpg" alt="calculators" />
+                <figcaption>pink and green calculators</figcaption>
               </figure>
               <div id="prev">&Lang;</div>
               <div id="next">&Rang;</div>
@@ -56,11 +60,11 @@
 
     <section id="search_container" class="flex_container">
 
-      <div id="search" class="flex_item">
-        <input type="text" placeholder="search" id="search_input"/>
+      <div id="search" class="search_item flex_item">
+        <input type="text" placeholder="search" class="search_input" id="filter_input"/>
       </div>
 
-      <div id="background" class="flex_item">
+      <div id="background" class="background_change_item flex_item">
         <button id="background_btn" class="violet_button">
           Change the background
         </button>
@@ -181,11 +185,11 @@
       <div id="quote" class="flex_item">
         <h2>Quote of the day</h2>
 
-        <div class="calc_box">
+        <blockquote class="calc_box" cite="https://gist.githubusercontent.com/nasrulhazim/54b659e43b1035215cd0ba1d4577ee80/raw/e3c6895ce42069f0ee7e991229064f167fe8ccdc/quotes.json">
           <div id="quote_text"></div>
           <div id="quote_author"></div>
           <button class="calc_button" onclick="generateQuote()">new quote</button>
-        </div>
+        </blockquote>
 
       </div>
 

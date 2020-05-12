@@ -1,4 +1,4 @@
-let search = document.querySelector('#search_input')
+let search = document.querySelector('#filter_input')
 let calculatorItems = document.querySelectorAll('#calculators_container .flex_item')
 let notFound = document.querySelector('#not_found')
 

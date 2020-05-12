@@ -79,6 +79,10 @@ h1 {
     -webkit-transition: opacity 1.2s;
     transition: opacity 1.2s;
   }
+
+  .slides_container figcaption {
+    display: none;
+  }
   
   #slide1 {
     position: relative;
@@ -172,12 +176,12 @@ h1 {
 }
 
 /* SEARCH SECTION */
-#search,
-#background {
+.search_item,
+.background_change_item {
   background-color: #ffeea8;
 }
 
-#search_input {
+.search_input {
   font-size: 1.4em;
   margin: 0;
   padding: 0;
@@ -189,7 +193,7 @@ h1 {
   color: #353a8d;
 }
 
-#background {
+.background_change_item {
   text-align: center;
 }
 
